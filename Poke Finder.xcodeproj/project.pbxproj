@@ -12,9 +12,13 @@
 		8512E0951D958B4C007B26EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8512E0931D958B4C007B26EF /* Main.storyboard */; };
 		8512E0971D958B4D007B26EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8512E0961D958B4D007B26EF /* Assets.xcassets */; };
 		8512E09A1D958B4D007B26EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8512E0981D958B4D007B26EF /* LaunchScreen.storyboard */; };
+		8522D54E1D9ADE5600CA701D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8522D54D1D9ADE5600CA701D /* GoogleService-Info.plist */; };
+		C1CB12F22409EAEC5E682A7E /* Pods_Poke_Finder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2569C8859F01505A7D36EB /* Pods_Poke_Finder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440196DB8804D6CE95A434E0 /* Pods-Poke Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poke Finder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Poke Finder/Pods-Poke Finder.release.xcconfig"; sourceTree = "<group>"; };
+		6B2569C8859F01505A7D36EB /* Pods_Poke_Finder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poke_Finder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8512E08C1D958B4C007B26EF /* Poke Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8512E08F1D958B4C007B26EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8512E0911D958B4C007B26EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,13 @@
 		8512E0961D958B4D007B26EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8512E0991D958B4D007B26EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8512E09B1D958B4D007B26EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8522D54D1D9ADE5600CA701D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8522D5501D9AE26600CA701D /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		8522D5511D9AE26600CA701D /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		8522D5521D9AE26600CA701D /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		8522D5531D9AE26600CA701D /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		8522D5541D9AE38E00CA701D /* Poke Finder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Poke Finder-Bridging-Header.h"; sourceTree = "<group>"; };
+		F42386A226AD985F0BEFB720 /* Pods-Poke Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Poke Finder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Poke Finder/Pods-Poke Finder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CB12F22409EAEC5E682A7E /* Pods_Poke_Finder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58706EF735B6DBF817821920 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F42386A226AD985F0BEFB720 /* Pods-Poke Finder.debug.xcconfig */,
+				440196DB8804D6CE95A434E0 /* Pods-Poke Finder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8512E0831D958B4B007B26EF = {
 			isa = PBXGroup;
 			children = (
 				8512E08E1D958B4C007B26EF /* Poke Finder */,
 				8512E08D1D958B4C007B26EF /* Products */,
+				58706EF735B6DBF817821920 /* Pods */,
+				C38581B273E7318311B434EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,36 @@
 		8512E08E1D958B4C007B26EF /* Poke Finder */ = {
 			isa = PBXGroup;
 			children = (
+				8522D54F1D9AE26600CA701D /* API */,
 				8512E08F1D958B4C007B26EF /* AppDelegate.swift */,
 				8512E0911D958B4C007B26EF /* ViewController.swift */,
 				8512E0931D958B4C007B26EF /* Main.storyboard */,
 				8512E0961D958B4D007B26EF /* Assets.xcassets */,
 				8512E0981D958B4D007B26EF /* LaunchScreen.storyboard */,
 				8512E09B1D958B4D007B26EF /* Info.plist */,
+				8522D54D1D9ADE5600CA701D /* GoogleService-Info.plist */,
+				8522D5541D9AE38E00CA701D /* Poke Finder-Bridging-Header.h */,
 			);
 			path = "Poke Finder";
+			sourceTree = "<group>";
+		};
+		8522D54F1D9AE26600CA701D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8522D5501D9AE26600CA701D /* GeoFire.h */,
+				8522D5511D9AE26600CA701D /* GFCircleQuery.h */,
+				8522D5521D9AE26600CA701D /* GFQuery.h */,
+				8522D5531D9AE26600CA701D /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C38581B273E7318311B434EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B2569C8859F01505A7D36EB /* Pods_Poke_Finder.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8512E09E1D958B4D007B26EF /* Build configuration list for PBXNativeTarget "Poke Finder" */;
 			buildPhases = (
+				16F0035AC1EE46942D6AB33A /* [CP] Check Pods Manifest.lock */,
 				8512E0881D958B4C007B26EF /* Sources */,
 				8512E0891D958B4C007B26EF /* Frameworks */,
 				8512E08A1D958B4C007B26EF /* Resources */,
+				880EE1FE5E6D47CD6F52896A /* [CP] Embed Pods Frameworks */,
+				E9D3D4DC5D1BDE3B3DFCE3CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +145,7 @@
 					8512E08B1D958B4C007B26EF = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3RQAYNAD56;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,12 +174,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				8512E09A1D958B4D007B26EF /* LaunchScreen.storyboard in Resources */,
+				8522D54E1D9ADE5600CA701D /* GoogleService-Info.plist in Resources */,
 				8512E0971D958B4D007B26EF /* Assets.xcassets in Resources */,
 				8512E0951D958B4C007B26EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16F0035AC1EE46942D6AB33A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		880EE1FE5E6D47CD6F52896A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poke Finder/Pods-Poke Finder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D3D4DC5D1BDE3B3DFCE3CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Poke Finder/Pods-Poke Finder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8512E0881D958B4C007B26EF /* Sources */ = {
@@ -257,26 +355,33 @@
 		};
 		8512E09F1D958B4D007B26EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F42386A226AD985F0BEFB720 /* Pods-Poke Finder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3RQAYNAD56;
 				INFOPLIST_FILE = "Poke Finder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bsc.Poke-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Poke Finder/Poke Finder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8512E0A01D958B4D007B26EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 440196DB8804D6CE95A434E0 /* Pods-Poke Finder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3RQAYNAD56;
 				INFOPLIST_FILE = "Poke Finder/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bsc.Poke-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Poke Finder/Poke Finder-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +405,7 @@
 				8512E0A01D958B4D007B26EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
